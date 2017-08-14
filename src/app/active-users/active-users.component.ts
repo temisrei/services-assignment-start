@@ -7,7 +7,7 @@ import { UsersService } from '../users.service';
   styleUrls: ['./active-users.component.css']
 })
 export class ActiveUsersComponent {
-  @Input() users: string[];
+  users: string[];
   @Output() userSetToInactive = new EventEmitter<number>();
 
   constructor(private usersSvc: UsersService) {
