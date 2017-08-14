@@ -8,13 +8,12 @@ import { UsersService } from '../users.service';
 })
 export class ActiveUsersComponent {
   users: string[];
-  @Output() userSetToInactive = new EventEmitter<number>();
 
   constructor(private usersSvc: UsersService) {
 
   }
 
   onSetToInactive(id: number) {
-    this.userSetToInactive.emit(id);
+
   }
 }
